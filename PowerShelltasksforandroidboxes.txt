@@ -1,0 +1,11 @@
+1. connect : .\adb.exe connect <IP Address> 
+2. Disconnect : .\adb.exe disconnect <IP Address> 
+3. Reboot: .\adb.exe shell reboot 
+4. set date and time: .\adb.exe shell date MMDDhhmm[[cc]YY].[ss]
+e.g: MonthDayHourMinuteYear.Second 
+
+5.check all the installed applications (packages) on the device: 
+.\adb.exe shell cmd package list packages -e 
+
+6.start an app: .\adb.exe shell am start <package> 
+7.close an app: .\adb.exe shell am force-stop <package> 
